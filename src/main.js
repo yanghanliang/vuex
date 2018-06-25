@@ -2,20 +2,7 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-import Vuex from 'vuex'
-
-Vue.use(Vuex)
-
-const store = new Vuex.Store({
-  state: {
-    count: 0
-  },
-  mutations: {
-    increate(state) {
-      state.count++
-    }
-  }
-})
+import store from './store'
 
 Vue.config.productionTip = false
 
