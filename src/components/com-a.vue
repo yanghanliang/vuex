@@ -1,13 +1,17 @@
 <template>
     <div>
         com-a
-        {{ $store.state.count }}
+        {{ count }}
     </div>
 </template>
 
 <script>
 export default {
-
+  computed: {
+    count() {
+      return this.$store.state.count
+    }
+  }
 }
 </script>
 
