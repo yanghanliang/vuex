@@ -19,8 +19,8 @@ export default {
   // this.count (这是一个计算属性) 映视到 this.$store.state.count
   computed: {
     // 组件本身的计算属性,写于不写都可以,不知道为什么我写了就报错,但仍能正常执行
-    //test() {
-    //}
+    // test() {
+    // }
     ...mapState({
       num: 'count'
     })

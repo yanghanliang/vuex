@@ -4,16 +4,20 @@
     {{ $store.state.count }}
     <hr />
     <comp-a></comp-a>
+    <br />
+    <comp-b></comp-b>
   </div>
 </template>
 
 <script>
 import compA from '@/components/com-a'
+import compB from '@/components/com-b'
 
 export default {
   name: 'App',
   components: {
-    compA
+    compA,
+    compB
   },
   methods: {
     hanleClick() {
