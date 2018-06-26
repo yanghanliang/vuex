@@ -6,18 +6,22 @@
     <comp-a></comp-a>
     <br />
     <comp-b></comp-b>
+    <br />
+    <comp-c></comp-c>
   </div>
 </template>
 
 <script>
 import compA from '@/components/com-a'
 import compB from '@/components/com-b'
+import compC from '@/components/com-c'
 
 export default {
   name: 'App',
   components: {
     compA,
-    compB
+    compB,
+    compC
   },
   methods: {
     hanleClick() {
