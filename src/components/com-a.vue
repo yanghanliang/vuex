@@ -1,7 +1,7 @@
 <template>
     <div>
         com-a
-        {{ count }}
+        {{ num }}
     </div>
 </template>
 
@@ -9,9 +9,16 @@
 import { mapState } from 'vuex'
 
 export default {
-  computed: mapState([
-    'count'
-  ])
+  // computed: mapState({
+  // num: 'count'
+  // })
+
+  // this.count (这是一个计算属性) 映视到 this.$store.state.count
+  computed: {
+    ...mapState({
+      num: 'count'
+    })
+  }
 }
 </script>
 
