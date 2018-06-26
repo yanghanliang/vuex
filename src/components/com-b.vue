@@ -2,16 +2,25 @@
     <div>
         com-b
         <br />
-        {{ msg }}
+        <!-- {{ reverseMsg }} -->
+        {{ rMsg }}
     </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
+//   computed: {
+//     msg() {
+//       return this.$store.getters.reverseMsg
+//     }
+//   }
   computed: {
-    msg() {
-      return this.$store.getters.reverseMsg
-    }
+    // 注意这里是大括号
+    ...mapGetters({
+      'rMsg': 'reverseMsg'
+    })
   }
 }
 </script>
